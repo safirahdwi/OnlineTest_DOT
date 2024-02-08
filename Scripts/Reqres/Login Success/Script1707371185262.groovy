@@ -27,10 +27,6 @@ def responseVerifyBasic = WS.sendRequest(verifyBasic)
 'Verify Respon'
 def hasil = WS.verifyResponseStatusCode(responseVerifyBasic, 200)
 
-def slurper = new groovy.json.JsonSlurper()
-def result = slurper.parseText(responseVerifyBasic.getResponseBodyContent())
-println result
-
 
 
 
